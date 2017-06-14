@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "636629960300",
+    "firebase_url": "https://chatboxbox-92bd2.firebaseio.com",
+    "project_id": "chatboxbox-92bd2",
+    "storage_bucket": "chatboxbox-92bd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636629960300:android:0b441f7116294cb4",
+        "android_client_info": {
+          "package_name": "com.example.codemate.chatboxbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636629960300-r5psito6hk4d9gcpsddj41casja6vnqk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.codemate.chatboxbox",
+            "certificate_hash": "01f7c31a92fea62de0e846b480ea200c13fe7cb4"
+          }
+        },
+        {
+          "client_id": "636629960300-jl5g44k05voknj0silcu0b6n39lsldan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsL1rcufx0V9cYtOMcCV5KAuL6us1S8gw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636629960300-jl5g44k05voknj0silcu0b6n39lsldan.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
