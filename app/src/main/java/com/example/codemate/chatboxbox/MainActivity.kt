@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import com.firebase.ui.auth.AuthUI
@@ -19,10 +21,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_start.visibility = View.GONE
+        btn_logout.visibility = View.GONE
 
         btn_start.setOnClickListener {
             val intent = Intent (this, ChatActivity::class.java)
             startActivity(intent)
+        }
+
+        btn_logout.setOnClickListener {
+                AuthUI.getInstance().signOut(this)
+                        .addOnCompleteListener {
+                            Toast.makeText(this, "You have been signed out.", Toast.LENGTH_LONG).show()
+                            finish()
+                            btn_start.visibility = View.GONE
+                            btn_logout.visibility = View.GONE
+                        }
         }
 
         authenticateUser()
@@ -40,6 +53,7 @@ class MainActivity : AppCompatActivity() {
                     .currentUser!!.displayName, Toast.LENGTH_LONG)
                     .show()
             btn_start.visibility = View.VISIBLE
+            btn_logout.visibility = View.VISIBLE
         }
     }
 
@@ -50,6 +64,7 @@ class MainActivity : AppCompatActivity() {
             if (resultCode == Activity.RESULT_OK) {
                 Toast.makeText(this, "Signed in succesfully!", Toast.LENGTH_LONG).show()
                 btn_start.visibility = View.VISIBLE
+                btn_logout.visibility = View.VISIBLE
             }
 
         } else {
