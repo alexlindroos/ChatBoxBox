@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorGrey"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp">
 
     <TextView
         android:text="USERNAME"
@@ -13,13 +15,13 @@
         android:id="@+id/message_user"
         android:textStyle="normal|bold" />
 
-    <TextView
-        android:text="TIME MESSAGE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/message_user"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/message_time" />
+    <!--<TextView-->
+        <!--android:text="TIME MESSAGE"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/message_user"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:id="@+id/message_time" />-->
 
     <TextView
         android:text="MESSAGE"

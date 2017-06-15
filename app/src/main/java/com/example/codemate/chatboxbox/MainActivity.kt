@@ -4,8 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import com.firebase.ui.auth.AuthUI
@@ -24,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         btn_logout.visibility = View.GONE
 
         btn_start.setOnClickListener {
-            val intent = Intent (this, ChatActivity::class.java)
+            val intent = Intent (this, ChattingActivity::class.java)
             startActivity(intent)
         }
 
