@@ -35,8 +35,6 @@ public class ChattingActivity extends Activity {
             public void onClick(View view) {
                 EditText input = (EditText)findViewById(R.id.edit_message);
 
-                // Read the input field and push a new instance
-                // of ChatMessage to the Firebase database
                 FirebaseDatabase.getInstance()
                         .getReference()
                         .push()
@@ -62,11 +60,10 @@ public class ChattingActivity extends Activity {
                 R.layout.message, FirebaseDatabase.getInstance().getReference()) {
             @Override
             protected void populateView(View v, ChatMessage model, int position) {
-                // Get references to the views of message.xml
+
                 TextView messageText = (TextView)v.findViewById(R.id.message_text);
                 TextView messageUser = (TextView)v.findViewById(R.id.message_user);
 
-                // Set their text
                 messageText.setText(model.getMessageText());
                 messageUser.setText(model.getMessageUser());
             }
