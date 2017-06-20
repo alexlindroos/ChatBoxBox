@@ -53,6 +53,11 @@ public class ChattingActivity extends Activity {
         displayChat();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
     public void displayChat() {
         ListView listOfMessages = (ListView)findViewById(R.id.lv_all_messages);
 

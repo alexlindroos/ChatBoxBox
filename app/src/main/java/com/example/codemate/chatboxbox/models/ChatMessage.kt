@@ -1,7 +1,5 @@
 package com.example.codemate.chatboxbox.models
 
-import java.util.*
-
 /**
  * Created by Alex Lindroos on 14/06/2017.
  */
